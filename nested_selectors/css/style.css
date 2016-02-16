@@ -1,0 +1,31 @@
+body {
+    font-family: Georgia, serif;
+    color: #888;
+}
+
+h1 {
+    color: black;
+    margin: 25px;
+}
+
+em {
+    color: black;
+}
+
+p {
+    margin: 40px 0;
+}
+
+blockquote {
+    border-left: 10px solid #eee;
+    padding-left: 20px;
+}
+
+blockquote p {
+    font-style: italic;
+    margin: 0;
+}
+
+blockquote p em {
+    font-style: normal;
+}

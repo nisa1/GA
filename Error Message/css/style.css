@@ -1,0 +1,32 @@
+body {
+    font-family: "georgia";
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+#notification {
+    background: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.message {
+    background: #ffe;
+    padding: 15px;
+    border: 2px solid #ccb;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.error {
+    /*color: red;*/
+    background: #fee;
+    border-color: #c66;
+}
+
+.success {
+    background: #A1D490;
+    border-color: #FFEB3B;
+}

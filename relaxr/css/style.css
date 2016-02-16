@@ -1,0 +1,187 @@
+/*
+Project Name: Relaxr Site
+Client: Relaxr
+Author: Nisa Andrews
+Developer @GA in LA
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: 'Open Sans', sans-serif;
+     background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
+      background-size: cover;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  width: 100%;
+  margin: auto;
+  height: 300px;
+
+}
+
+#container h1 {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+#container h2 {
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+}
+
+#benefits h2 {
+    font-weight: 600px;
+    font-size: 20px;
+}
+
+#benefits p {
+    font-weight: lighter;
+    font-size: 13px;
+    color: #606161;
+}
+
+#benefits ul {
+    font-weight: lighter;
+    font-size: 13px;
+    color: #606161;
+}
+
+#benefits {
+    background: #f0efef;
+    width: 100%;
+    margin: auto;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+}
+
+#pullquote p {
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 150px;
+    padding-bottom: 10px;
+    padding-right: 150px;
+}
+
+#pullquote h4 {
+    font-weight: 600px;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer h2 {
+    font-weight: 800;
+    font-size: 24px;
+    color: #f9e42e;
+    text-align: center;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* Get It Now Button Style */
+
+.getitnowbutton {
+    display: block;
+    height: 40px;
+    width: 200px;
+    background: #f9e42e;
+    border-radius: 5px;
+    color: #121212;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 800;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    
+}
+
+/* Button Link Styling */
+
+a.getitnowbutton {
+    text-decoration: none;
+}
+
+
+/* Sign Up Now Style */
+
+.signupnowbutton {
+    display: block;
+    height: 40px;
+    width: 200px;
+    background: #033048;
+    border-radius: 5px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 800;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    
+}
+
+/* Button Link Styling */
+
+a.signupnowbutton {
+    text-decoration: none;
+}
