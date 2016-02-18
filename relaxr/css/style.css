@@ -10,6 +10,8 @@ Developer @GA in LA
 /* SETUP
 /*******************************************/
 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800);
+
 /* Box Model Hack */
 * {
      -moz-box-sizing: border-box; /* Firexfox */
@@ -54,7 +56,6 @@ body {
       background-size: cover;
 }
 
-
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -63,19 +64,49 @@ body {
 #container {
   width: 100%;
   margin: auto;
-  height: 300px;
+  /*height: 300px;*/
 
 }
 
-#container h1 {
+/* Hero container styles */
+
+#hero-container {
+    background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
+    background-size: cover;
+    padding-top: 32px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+h1 {
     font-weight: 800;
     font-size: 24px;
+    color: #fff
 }
 
-#container h2 {
-    font-weight: 500;
-    font-size: 24px;
+#hero-details {
     text-align: center;
+}
+
+#hero-details a {
+    display: block;
+    height: 40px;
+    width: 250px;
+    background: #f9e42e;
+    border-radius: 5px;
+    color: #121212;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 10px;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+#hero-container h2 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+    margin: 120px 0 90px 0;
 }
 
 #benefits h2 {
@@ -124,46 +155,7 @@ body {
     text-align: center;
 }
 
-footer h2 {
-    font-weight: 800;
-    font-size: 24px;
-    color: #f9e42e;
-    text-align: center;
-}
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
-
-/* Get It Now Button Style */
-
-.getitnowbutton {
-    display: block;
-    height: 40px;
-    width: 200px;
-    background: #f9e42e;
-    border-radius: 5px;
-    color: #121212;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 800;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    
-}
-
-/* Button Link Styling */
-
-a.getitnowbutton {
-    text-decoration: none;
-}
-
-
-/* Sign Up Now Style */
-
-.signupnowbutton {
+#signupnowbutton a {
     display: block;
     height: 40px;
     width: 200px;
@@ -177,11 +169,21 @@ a.getitnowbutton {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
-    
+    text-decoration: none;
 }
+
+
+footer h2 {
+    font-weight: 800;
+    font-size: 24px;
+    color: #f9e42e;
+    text-align: center;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
 
 /* Button Link Styling */
 
-a.signupnowbutton {
-    text-decoration: none;
-}
+
