@@ -1,0 +1,47 @@
+@import url(https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans);
+
+header {
+	color: #fff;
+    background-color: #033048;
+	height: 100px;	
+}
+
+.nav-link {
+	background: #f9e42e;
+	margin: 10%;
+}
+
+.nav-link:hover {
+	background: #606161;
+}
+
+h1 {
+    background: 121212;
+    display: inline-block;
+    width: 50%;
+    border: 1px white solid;
+    font-size: 36px;
+}
+
+nav {
+    display: inline-block;
+    width: 50%;
+    margin-left: 100;
+    border: 1px white solid;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#blog-post {
+    float: left;
+    width: 60%;
+}
+
+#categories {
+    float: right;
+    width: 40%;
+}
+
+#about {
+    float: right;
+}
