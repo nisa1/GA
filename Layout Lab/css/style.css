@@ -68,13 +68,18 @@ h3 {
     font-weight: 800;
 }
 
-ul {
+ul li a {
     font-size: 24px;
     text-decoration: none;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 p {
     font-size: 24px;
-    font-weight: 200;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+ul {
+        margin-top: 20px;
 }
