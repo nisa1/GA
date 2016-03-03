@@ -24,6 +24,7 @@ h1 {
     font-size: 36px;
     padding-top: 30px;
     padding-left: 90px;
+    font-weight: 800px;
 }
 
 h2 {
@@ -45,13 +46,13 @@ article {
     float: left;
     width: 47%;
     padding-left: 90px;
-    padding-top: 40px;
+    padding-top: 50px;
 }
 
 aside {
     float: right;
     width: 40%;
-    padding-top: 35px;
+     margin-top: 60px;
 }
 
 body {
@@ -81,5 +82,23 @@ p {
 }
 
 ul {
-        margin-top: 20px;
+    margin-top: 20px;
+}
+
+.about {
+    margin-top: 50px;
+}
+
+.about a {
+    text-decoration: none;
+    
+}
+
+.ad {
+    margin-top: 60px;
+    text-decoration: none;
+}
+
+.blog-post a {
+    text-decoration: none;
 }
