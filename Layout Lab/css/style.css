@@ -52,7 +52,12 @@ article {
 aside {
     float: right;
     width: 40%;
-     margin-top: 60px;
+    margin-top: 60px;
+}
+
+aside h3 {
+    font-size: 32px;
+    font-weight: 800;
 }
 
 body {
@@ -69,13 +74,13 @@ h3 {
     font-weight: 800;
 }
 
-ul li a {
+.categories a {
     font-size: 24px;
     text-decoration: none;
     font-weight: 300;
 }
 
-p {
+article p {
     font-size: 24px;
     font-weight: 300;
     margin-top: 20px;
@@ -91,14 +96,68 @@ ul {
 
 .about a {
     text-decoration: none;
-    
 }
 
 .ad {
-    margin-top: 60px;
     text-decoration: none;
+    margin-top: 60px;
+    background-color: #fff;
+    font-size: 24px;
+    height: 500px;
+    width: 240px;
 }
 
 .blog-post a {
     text-decoration: none;
+}
+
+.about p {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.about a {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+footer a {
+    display: block;
+    height: 40px;
+    width: 250px;
+    border-radius: 5px;
+    color: #fff;
+    background: #033048;
+    padding: 10px;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+footer h2 {
+    color: #f9e42e;
+}
+
+article a {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+footer {
+    background: #121212;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+}
+
+footer img {
+    height: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer .signup-button {
+    height: 100px;
+    background: #f9e42e;
 }
