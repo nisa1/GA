@@ -1,26 +1,27 @@
 $(document).ready(function() {
-  $(".readmore").click(readMoreClick);
-  $(".readless").click(readLessClick);
-  $(".learnmore").click(learnMoreClick);
+  $(".readmore").click(readMore);
+  $(".readless").click(readLess);
+  $(".learnmore").click(learnMore);
 
-  function readMoreClick() {
+  function readMore() {
     event.preventDefault();
     $("#show-this-on-click").slideDown();
     $(".readmore").hide();
     $(".readless").show();
   }
 
-  function readLessClick() {
+  function readLess() {
     event.preventDefault();
     $("#show-this-on-click").slideUp();
     $(".readless").hide();
     $(".readmore").show();    
   }
 
-  function learnMoreClick() {
+  function learnMore() {
     event.preventDefault();
     $("#learnmoretext").slideDown();
-    $(".learnmore").hide();    
+    $(".learnmore").hide();
+    $(".readless").show;
   }
 
 });
