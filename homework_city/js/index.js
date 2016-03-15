@@ -15,7 +15,7 @@ function pageReady() {
     resetBody();
     
     //if the user inputs SF/San Francisco/Bay Area change the css class to "sf"
-    if(city == "sf" || city == "san francisco" || city == "bay area") {
+    if (city == "sf" || city == "san francisco" || city == "bay area") {
         $("body").addClass("sf");
     }
     
