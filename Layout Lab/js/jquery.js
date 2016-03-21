@@ -20,7 +20,7 @@ $(document).ready(function() {
   function learnMore() {
     event.preventDefault();
     $("#learnmoretext").slideDown();
-    $(".learnmoretext").hide();
+    $(".learnmore").hide();
     $(".readless").show;
   }
 

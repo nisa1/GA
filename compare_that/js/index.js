@@ -10,8 +10,6 @@ function readyFunction() {
 
 		var a = Number($("#a").val());
 		var b = Number($("#b").val());
-console.log("a: " + a);
-console.log($("#b").val());
         
 		if (a < b) {
 			$("#comparison").text("<");
