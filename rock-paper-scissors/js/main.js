@@ -1,4 +1,47 @@
-var computerChoice;
+$(document).ready(pageReady);
+
+function pageReady() {
+	var userChoice;
+	var computerChoice;
+	var outcome;
+	var userWins = 0;
+	var computerWins = 0;
+}
+
+$(".play-button").click(playClick);
+	function playClick() {
+	  $(".play-button").slideUp();
+	  $(".game-container").slideDown();
+	  computerPlay();
+	}
+
+	$(".play-again").click(againClick);
+	function againClick() {
+	  clearText();
+	  $(".results-container").slideDown("slow", function() {
+	    $(".choices-container").slideDown();    
+	  });
+	  
+	  computerPlay();
+	}  
+
+	$(".rock").click(rockClick)
+	function rockClick() {
+	  userChoice = "rock";
+	  getResult(userChoice, computerChoice);
+	}
+
+	$(".paper").click(paperClick)
+	function paperClick() {
+	  userChoice = "paper";
+	  getResult(userChoice, computerChoice);
+	}
+
+	$(".scissors").click(scissorsClick)
+	function scissorsClick() {
+	  userChoice = "scissors";
+	  getResult(userChoice, computerChoice);
+	}
 
 // Generates random computer choice
 function computerPlay() {
@@ -15,4 +58,38 @@ function getRandomInt(min, max) {
 
 // Demonstration of how to generate random computer choice.
 computerPlay();
-console.log(computerChoice);
+// console.log(computerChoice);
+
+function getResult(userChoice, computerChoice) {
+
+
+  if (userChoice === computerChoice) { outcome = 'TIE'; }
+  if ((userChoice === 'scissors' && computerChoice === 'rock') || (userChoice === 'rock' && computerChoice === 'paper') || (userChoice === 'paper' && computerChoice === 'scissors')) { outcome = 'LOSS'; }
+  else { outcome = 'WIN'; }
+
+	  $(".user-choice").text(userChoice);
+	  $(".computer-choice").text(computerChoice);
+	  $(".results").text(outcome);  
+	  $("#computer-tally").text(computerWins);  
+	  $("#user-tally").text(userWins);  
+	  
+	  $(".choices-container").slideUp("slow", function() {
+	    $(".results-container").slideDown();
+	  });
+
+	}
+
+// Clears choice and results text
+	function clearText() {
+	  $(".user-choice").text("");
+	  $(".computer-choice").text("");
+	  $(".results").text("");
+	}
+
+// Show choices
+$(document).ready(function() {
+	$('.play-button').click(function() { 
+		$('.game-container').show();
+	});
+});
+
